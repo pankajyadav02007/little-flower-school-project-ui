@@ -1,0 +1,7 @@
+{
+  "name": "Little Flower School",
+  "description": "A professional and modern website for Little Flower School, providing quality education from Nursery to Class 12.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
