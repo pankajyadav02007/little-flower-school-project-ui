@@ -38,7 +38,7 @@ const programs = [
 
 export default function Programs() {
   return (
-    <section className="py-32 bg-gray-50">
+    <section className="md:py-18 py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-20">
           <motion.span 
@@ -52,11 +52,11 @@ export default function Programs() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-6xl font-bold text-primary mb-6 font-heading"
+            className="text-2xl md:text-4xl md:text-6xl font-bold text-primary mb-6 font-heading"
           >
             Nursery to 12th Programs
           </motion.h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto font-light">
+          <p className="md:text-xl text-gray-600 max-w-2xl mx-auto font-light">
             We offer a comprehensive educational journey tailored to every stage of your child's development.
           </p>
           <div className="w-24 h-1.5 bg-accent mx-auto mt-8 rounded-full"></div>
@@ -85,9 +85,9 @@ export default function Programs() {
               <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               {/* Content */}
-              <div className="absolute inset-0 p-10 flex flex-col justify-end text-white">
+              <div className="absolute inset-0 md:p-10 p-5 flex flex-col justify-end text-white">
                 <div className="mb-6 flex items-center justify-between">
-                  <div className="bg-accent/20 backdrop-blur-md p-4 rounded-2xl border border-white/20 text-accent group-hover:bg-accent group-hover:text-primary transition-all duration-500">
+                  <div className="bg-accent/20 backdrop-blur-md md:p-4 p-2 rounded-2xl border border-white/20 text-accent group-hover:bg-accent group-hover:text-primary transition-all duration-500">
                     {program.icon}
                   </div>
                   {program.streams && (

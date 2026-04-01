@@ -3,15 +3,15 @@ import { teachers } from '../data/teachers';
 
 export default function Teachers() {
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="md:py-20 py-6 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-primary mb-4">Meet Our Trusted Teachers & Staff</h2>
+          <h2 className="md:text-4xl text-2xl font-bold text-primary mb-4">Meet Our Trusted Teachers & Staff</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">Our educators are the heart of Little Flower School, bringing expertise and passion to every classroom.</p>
           <div className="w-24 h-1 bg-accent mx-auto mt-4"></div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-12 gap-10">
           {teachers.map((teacher, index) => (
             <motion.div
               key={teacher.id}
@@ -39,7 +39,7 @@ export default function Teachers() {
               <p className="text-gray-500 text-sm italic">{teacher.qualification}</p>
               
               {teacher.message && (
-                <div className="mt-4 p-4 bg-white rounded-2xl border border-gray-100 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="md:mt-4 md:p-4 bg-white rounded-2xl border border-gray-100 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <p className="text-xs text-gray-600 italic">"{teacher.message}"</p>
                 </div>
               )}

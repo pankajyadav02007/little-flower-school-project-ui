@@ -9,10 +9,10 @@ import 'swiper/css/pagination';
 
 export default function Reviews() {
   return (
-    <section className="py-24 bg-primary text-white overflow-hidden">
+    <section className="md:py-20 py-12 bg-primary text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">What Parents Say About Us</h2>
+          <h2 className="md:text-4xl text-2xl font-bold mb-4">What Parents Say About Us</h2>
           <div className="flex items-center justify-center space-x-2 text-accent mb-4">
             <Star size={20} fill="currentColor" />
             <span className="text-xl font-bold">4.8/5 Average Rating</span>

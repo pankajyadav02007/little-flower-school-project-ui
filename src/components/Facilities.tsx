@@ -4,10 +4,10 @@ import { facilities } from '../data/facilities';
 
 export default function Facilities() {
   return (
-    <section className="py-24 bg-white">
+    <section className="md:py-24 py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-primary mb-4">World-Class School Facilities</h2>
+          <h2 className="md:text-4xl text-2xl font-bold text-primary mb-4">World-Class School Facilities</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">We provide the best-in-class infrastructure to support your child's academic and personal growth.</p>
           <div className="w-24 h-1 bg-accent mx-auto mt-4"></div>
         </div>
@@ -24,11 +24,11 @@ export default function Facilities() {
                 transition={{ delay: index * 0.1 }}
                 className="group bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl transition-all"
               >
-                <div className="h-48 overflow-hidden relative">
+                <div className="md:h-98 h-48 overflow-hidden relative">
                   <img 
                     src={facility.image} 
                     alt={facility.title} 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-[250px] md:h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute top-4 right-4 bg-white p-2 rounded-xl text-primary shadow-md">

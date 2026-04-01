@@ -13,10 +13,10 @@ const images = [
 
 export default function GalleryPreview() {
   return (
-    <section className="py-24 bg-white">
+    <section className="md:py-24 py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-primary mb-4">Life at Little Flower School</h2>
+          <h2 className="md:text-4xl text-2xl font-bold text-primary mb-4">Life at Little Flower School</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">A glimpse into our vibrant campus, classrooms, and student activities.</p>
           <div className="w-24 h-1 bg-accent mx-auto mt-4"></div>
         </div>
@@ -47,7 +47,7 @@ export default function GalleryPreview() {
         </div>
 
         <div className="text-center">
-          <Link to="/gallery" className="inline-flex items-center space-x-3 bg-primary text-white px-10 py-4 rounded-full font-bold hover:bg-accent hover:text-primary transition-all shadow-xl">
+          <Link to="/gallery" className="inline-flex items-center space-x-3 bg-primary text-white px-5 md:px-10 md:py-4 py-2 rounded-full font-bold hover:bg-accent hover:text-primary transition-all shadow-xl">
             <span>View Full Gallery</span>
             <ArrowRight size={20} />
           </Link>

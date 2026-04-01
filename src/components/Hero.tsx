@@ -96,7 +96,7 @@ export default function Home() {
             <div className="absolute top-[68px] bottom-[90px] flex flex-col justify-center px-6 md:px-16 max-w-[800px]">
 
               {/* BADGE */}
-              <div className="w-100 inline-flex items-center gap-2 bg-[#F5A623]/20 border border-[#F5A623]/40 rounded-full px-4 py-1 text-[10px] tracking-[2px] uppercase mb-4">
+              <div className="w-70 md:w-100 inline-flex items-center gap-2 bg-[#F5A623]/20 border border-[#F5A623]/40 rounded-full px-4 py-1 text-[10px] tracking-[2px] uppercase mb-4">
                 <div className="w-2 h-2 bg-[#F5A623] rounded-full animate-pulse" />
                 {i === 0 && "Nurturing Excellence Since 2010"}
                 {i === 1 && "World-Class Academic Excellence"}
@@ -116,11 +116,11 @@ export default function Home() {
               </p>
 
               {/* BUTTONS */}
-              <div className="flex gap-3 flex-wrap">
-                <button className="bg-gradient-to-br from-[#F5A623] to-[#c97d00] text-[#0D1B30] font-bold px-6 py-3 rounded-full">
+              <div className="flex gap-3 flex-col md:flex-row md:flex-wrap">
+                <button className="w-50 md:w-60 bg-gradient-to-br from-[#F5A623] to-[#c97d00] text-[#0D1B30] text-sm md:text-[17px] font-bold md:font-bold px-3 md:px-6 py-1.5 md:py-3 rounded-full">
                   Apply for Admission
                 </button>
-                <button className="border border-white/30 px-6 py-3 rounded-full">
+                <button className="w-50 md:w-60 border border-white/30 text-sm md:text-[17px] font-bold md:font-bold px-3 md:px-6 py-1.5 md:py-3 rounded-full">
                   Book School Visit
                 </button>
               </div>
@@ -134,13 +134,13 @@ export default function Home() {
       <div className="absolute right-6 md:right-12 bottom-28 flex gap-3 z-10">
         <button
           onClick={() => setCur((cur - 1 + 3) % 3)}
-          className="w-11 h-11 rounded-full border border-white/30 bg-white/10"
+          className="w-9 md:w-11 h-9 md:h-11 rounded-full border border-white/30 bg-white/10"
         >
           ←
         </button>
         <button
           onClick={() => setCur((cur + 1) % 3)}
-          className="w-11 h-11 rounded-full border border-white/30 bg-white/10"
+          className="w-9 md:w-11 h-9 md:h-11 rounded-full border border-white/30 bg-white/10"
         >
           →
         </button>

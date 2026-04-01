@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 
 export default function Events() {
   return (
-    <section className="py-24 bg-white">
+    <section className="md:py-20 py-8 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div className="max-w-2xl">
-            <h2 className="text-4xl font-bold text-primary mb-4">Events & Activities</h2>
+            <h2 className="md:text-4xl text-2xl font-bold text-primary mb-4">Events & Activities</h2>
             <p className="text-gray-600">Capturing the vibrant life and celebrations at Little Flower School. From cultural fests to scientific explorations.</p>
           </div>
-          <Link to="/events" className="bg-primary text-white px-8 py-3 rounded-full font-bold hover:bg-accent hover:text-primary transition-all flex items-center space-x-2">
+          <Link to="/events" className="bg-primary text-white px-4 md:px-8 md:py-3 py-1.5 rounded-full font-bold hover:bg-accent hover:text-primary transition-all flex items-center space-x-2">
             <span>View All Events</span>
             <ArrowRight size={18} />
           </Link>

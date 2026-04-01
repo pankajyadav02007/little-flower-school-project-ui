@@ -22,28 +22,28 @@ export default function AdmissionCTA() {
           viewport={{ once: true }}
           className="max-w-4xl mx-auto"
         >
-          <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
+          <h2 className="md:text-4xl text-2xl md:text-6xl font-bold mb-8 leading-tight">
             Admissions Open for <span className="text-accent">Nursery to Class 12</span>
           </h2>
-          <p className="text-xl text-gray-300 mb-12 leading-relaxed">
+          <p className="md:text-xl text-gray-300 mb-12 leading-relaxed">
             Take the first step towards your child's bright future. Join the Little Flower School family today and experience world-class education.
           </p>
 
           <div className="flex flex-wrap justify-center gap-6">
             <Link 
               to="/admissions" 
-              className="bg-accent text-primary px-10 py-5 rounded-full font-bold text-lg hover:bg-white transition-all flex items-center space-x-3 shadow-2xl"
+              className="bg-accent text-primary px-5 md:px-10 md:py-5 py-2.5 rounded-full font-bold text-lg hover:bg-white transition-all flex items-center space-x-3 shadow-2xl"
             >
               <UserPlus size={24} />
               <span>Apply Now</span>
             </Link>
-            <button className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-white hover:text-primary transition-all flex items-center space-x-3">
+            <button className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-5 md:px-10 md:py-5 py-2.5 rounded-full font-bold text-lg hover:bg-white hover:text-primary transition-all flex items-center space-x-3">
               <Download size={24} />
               <span>Download Prospectus</span>
             </button>
             <Link 
               to="/contact" 
-              className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-white hover:text-primary transition-all flex items-center space-x-3"
+              className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-5 md:px-10 md:py-5 py-2.5 rounded-full font-bold text-lg hover:bg-white hover:text-primary transition-all flex items-center space-x-3"
             >
               <Calendar size={24} />
               <span>Schedule a Visit</span>

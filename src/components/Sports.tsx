@@ -14,7 +14,7 @@ import { Heart, Zap } from 'lucide-react';
 
 export default function Sports() {
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="md:py-20 py-14 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
@@ -25,7 +25,7 @@ export default function Sports() {
             >
               Beyond Academics
             </motion.span>
-            <h2 className="text-4xl font-bold text-primary mb-6 leading-tight">
+            <h2 className="md:text-4xl text-2xl font-bold text-primary mb-6 leading-tight">
               Sports, PT & Games for Overall Growth
             </h2>
             <p className="text-gray-600 text-lg mb-8 leading-relaxed">

@@ -45,7 +45,7 @@ export default function Layout() {
         href="https://wa.me/919876543210"
         target="_blank"
         rel="noreferrer"
-        className="fixed bottom-6 right-6 z-40 bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform"
+        className="fixed bottom-6 right-6 z-40 bg-green-500 text-white md:p-4 p-2 rounded-full shadow-lg hover:scale-110 transition-transform"
       >
         <MessageCircle size={28} />
       </a>
@@ -58,7 +58,7 @@ export default function Layout() {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0 }}
             onClick={scrollToTop}
-            className="fixed bottom-24 right-6 z-40 bg-primary text-white p-4 rounded-full shadow-lg hover:bg-accent hover:text-primary transition-all"
+            className="fixed bottom-24 right-6 z-40 bg-primary text-white md:p-4 p-2 rounded-full shadow-lg hover:bg-accent hover:text-primary transition-all"
           >
             <ArrowUp size={24} />
           </motion.button>
