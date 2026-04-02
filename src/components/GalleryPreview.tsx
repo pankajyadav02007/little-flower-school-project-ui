@@ -13,7 +13,7 @@ const images = [
 
 export default function GalleryPreview() {
   return (
-    <section className="md:py-24 py-12 bg-white">
+    <section className="md:py-18 py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="md:text-4xl text-2xl font-bold text-primary mb-4">Life at Little Flower School</h2>
@@ -38,9 +38,9 @@ export default function GalleryPreview() {
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                <div className="bg-white text-primary p-4 rounded-full shadow-xl">
+                <Link to='/Gallery' className="bg-white text-primary p-4 rounded-full shadow-xl">
                   <ArrowRight size={24} />
-                </div>
+                </Link>
               </div>
             </motion.div>
           ))}

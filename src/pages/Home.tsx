@@ -10,6 +10,8 @@ import News from '../components/News';
 import GalleryPreview from '../components/GalleryPreview';
 import AdmissionCTA from '../components/AdmissionCTA';
 import Contact from '../components/Contact';
+import VideoSection from '../components/VideoSection';
+import ReviewsVideo from '../components/ReviewsVideo';
 
 export default function Home() {
   return (
@@ -18,8 +20,10 @@ export default function Home() {
       <WhyChooseUs />
       <News />
       <Programs />
+      <ReviewsVideo/>
       <Teachers />
       <Reviews />
+      <VideoSection/>
       <Facilities />
       <Sports />
       <Events />

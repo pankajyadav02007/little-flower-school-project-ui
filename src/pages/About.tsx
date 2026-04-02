@@ -3,9 +3,9 @@ import { Target, Eye, History, Award } from 'lucide-react';
 
 export default function About() {
   return (
-    <div className="pt-12">
+    <div >
       {/* Page Header */}
-      <section className="bg-primary py-24 text-white text-center relative overflow-hidden">
+      <section className="bg-primary md:py-24 py-12 text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <img src="https://scontent.fvns6-1.fna.fbcdn.net/v/t1.6435-9/46485392_284657408846871_440148978638520320_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=OpHlWdWtDGYQ7kNvwGNfxuB&_nc_oc=AdpJe1KmNTL2yu7oyypd2AM6qlQMowRpAkd5_Mddaz0k9yerAKrzauq8xuRrBDRpe7QaVSmPnExP5yzP0f6odM9V&_nc_zt=23&_nc_ht=scontent.fvns6-1.fna&_nc_gid=vFSXNc_ca9H82ce3Cwlumw&_nc_ss=7a3a8&oh=00_AfyngUTZde1VFiaw9hXMwE7UcVCQuRo2SMRHsLdSXTLkOQ&oe=69F2FEF3" alt="Background" className="w-full h-full object-cover" />
         </div>
@@ -13,18 +13,18 @@ export default function About() {
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-6xl font-bold mb-6"
+            className="md:text-5xl text-2xl md:text-6xl font-bold mb-6"
           >
             About Little Flower School
           </motion.h1>
-          <p className="text-xl text-gray-300 leading-relaxed">
+          <p className="md:text-xl text-gray-300 leading-relaxed">
             A legacy of excellence, a future of innovation. Discover the story behind our commitment to education.
           </p>
         </div>
       </section>
 
       {/* History Section */}
-      <section className="py-24 bg-white">
+      <section className="md:py-24 py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -35,11 +35,11 @@ export default function About() {
               <History size={24} />
               <span className="font-bold uppercase tracking-widest text-sm">Our Legacy</span>
             </div>
-            <h2 className="text-4xl font-bold text-primary mb-6">Our History</h2>
-            <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+            <h2 className="md:text-4xl text-2xl font-bold text-primary mb-6">Our History</h2>
+            <p className="text-gray-600 md:text-lg mb-6 leading-relaxed">
               Founded in 2010, Little Flower School started with a vision to provide quality education in Sultanpur. What began as a small primary school has now grown into a premier educational institution with multiple branches across Uttar Pradesh.
             </p>
-            <p className="text-gray-600 text-lg leading-relaxed">
+            <p className="text-gray-600 md:text-lg leading-relaxed">
               Over the last 15 years, we have nurtured thousands of students who are now excelling in various fields across the globe. Our focus has always been on holistic development, combining academic rigor with moral values.
             </p>
           </motion.div>
@@ -55,29 +55,29 @@ export default function About() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-24 bg-gray-50">
+      <section className="md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
           <motion.div 
             whileHover={{ y: -10 }}
-            className="bg-white p-12 rounded-[3rem] shadow-sm border border-gray-100"
+            className="bg-white md:p-12 p-6 rounded-[3rem] shadow-sm border border-gray-100"
           >
-            <div className="w-16 h-16 bg-primary/5 rounded-2xl flex items-center justify-center text-primary mb-8">
+            <div className="md:w-16 w-8 h-8 md:h-16 bg-primary/5 rounded-2xl flex items-center justify-center text-primary mb-8">
               <Target size={32} />
             </div>
-            <h3 className="text-3xl font-bold text-primary mb-6">Our Mission</h3>
-            <p className="text-gray-600 text-lg leading-relaxed">
+            <h3 className="md:text-3xl text-2xl font-bold text-primary mb-6">Our Mission</h3>
+            <p className="text-gray-600 md:text-lg leading-relaxed">
               To empower students with knowledge, skills, and values that will enable them to become responsible global citizens and lifelong learners. We strive to create an inclusive environment that fosters creativity and critical thinking.
             </p>
           </motion.div>
           <motion.div 
             whileHover={{ y: -10 }}
-            className="bg-white p-12 rounded-[3rem] shadow-sm border border-gray-100"
+            className="bg-white md:p-12 p-6 rounded-[3rem] shadow-sm border border-gray-100"
           >
-            <div className="w-16 h-16 bg-primary/5 rounded-2xl flex items-center justify-center text-primary mb-8">
+            <div className="md:w-16 w-8 h-8 md:h-16 bg-primary/5 rounded-2xl flex items-center justify-center text-primary mb-8">
               <Eye size={32} />
             </div>
-            <h3 className="text-3xl font-bold text-primary mb-6">Our Vision</h3>
-            <p className="text-gray-600 text-lg leading-relaxed">
+            <h3 className="md:text-3xl text-2xl font-bold text-primary mb-6">Our Vision</h3>
+            <p className="text-gray-600 md:text-lg leading-relaxed">
               To be a leading center of educational excellence that inspires students to achieve their full potential and contribute positively to society. We envision a school where every child is valued and encouraged to shine.
             </p>
           </motion.div>
@@ -99,8 +99,8 @@ export default function About() {
                 <Award size={24} />
                 <span className="font-bold uppercase tracking-widest text-sm">Principal's Message</span>
               </div>
-              <h2 className="text-3xl font-bold mb-6">Leading with Vision</h2>
-              <p className="text-gray-300 text-lg italic mb-8 leading-relaxed">
+              <h2 className="md:text-3xl text-2xl font-bold mb-6">Leading with Vision</h2>
+              <p className="text-gray-300 md:text-lg italic mb-8 leading-relaxed">
                 "At Little Flower School, we believe that every child is a unique bloom. Our role is to provide the right soil, sunlight, and care for them to blossom. We are committed to providing an education that goes beyond textbooks, preparing our students for the challenges of the 21st century."
               </p>
               <div className="font-bold">

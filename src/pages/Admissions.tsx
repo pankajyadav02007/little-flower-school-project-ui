@@ -3,7 +3,7 @@ import { Download, CheckCircle, FileText, UserPlus, HelpCircle } from 'lucide-re
 
 export default function Admissions() {
   return (
-    <div className="pt-12">
+    <div >
       {/* Page Header */}
       <section className="bg-primary py-24 text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Login() {
   return (
-    <div className="min-h-screen pt-24 pb-12 bg-gray-50 flex items-center justify-center px-4">
+    <div className="min-h-screen  pb-12 bg-gray-50 flex items-center justify-center px-4">
       <motion.div 
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -12,7 +12,7 @@ export default function Login() {
       >
         <div className="bg-primary p-10 text-white text-center relative overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
-          <h2 className="text-3xl font-bold mb-2">Welcome Back</h2>
+          <h2 className="md:text-3xl text-2xl font-bold mb-2">Welcome Back</h2>
           <p className="text-gray-400 text-sm">Student & Parent Portal Login</p>
         </div>
 
@@ -27,7 +27,7 @@ export default function Login() {
                 <input 
                   type="text" 
                   placeholder="LF-2024-001" 
-                  className="w-full pl-12 pr-6 py-4 rounded-2xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+                  className="w-full pl-12 pr-6 md:py-4 py-2 rounded-2xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
                 />
               </div>
             </div>
@@ -44,7 +44,7 @@ export default function Login() {
                 <input 
                   type="password" 
                   placeholder="••••••••" 
-                  className="w-full pl-12 pr-6 py-4 rounded-2xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+                  className="w-full pl-12 pr-6 md:py-4 py-2 rounded-2xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
                 />
               </div>
             </div>
@@ -54,7 +54,7 @@ export default function Login() {
               <label htmlFor="remember" className="text-sm text-gray-600">Remember me</label>
             </div>
 
-            <button className="w-full bg-primary text-white py-5 rounded-2xl font-bold hover:bg-accent hover:text-primary transition-all flex items-center justify-center space-x-3 shadow-xl group">
+            <button className="w-full bg-primary text-white md:py-5 py-2.5 rounded-2xl font-bold hover:bg-accent hover:text-primary transition-all flex items-center justify-center space-x-3 shadow-xl group">
               <span>Login to Portal</span>
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </button>

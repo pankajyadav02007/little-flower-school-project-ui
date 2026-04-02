@@ -19,15 +19,34 @@ const galleryImages = [
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [currentIndex, setCurrentIndex] = useState<number | null>(null);
 
   const filteredImages = activeCategory === "All" 
     ? galleryImages 
     : galleryImages.filter(img => img.category === activeCategory);
 
+    const handlePrev = (e: any) => {
+  e.stopPropagation();
+  if (currentIndex === null) return;
+
+  const newIndex = (currentIndex - 1 + filteredImages.length) % filteredImages.length;
+  setCurrentIndex(newIndex);
+  setSelectedImage(filteredImages[newIndex].url);
+};
+
+const handleNext = (e: any) => {
+  e.stopPropagation();
+  if (currentIndex === null) return;
+
+  const newIndex = (currentIndex + 1) % filteredImages.length;
+  setCurrentIndex(newIndex);
+  setSelectedImage(filteredImages[newIndex].url);
+};
+
   return (
-    <div className="pt-12">
+    <div>
       {/* Page Header */}
-      <section className="bg-primary py-24 text-white text-center relative overflow-hidden">
+      <section className="bg-primary md:py-24 py-12 text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <img src="https://picsum.photos/seed/gallery-bg/1920/1080" alt="Background" className="w-full h-full object-cover" />
         </div>
@@ -35,18 +54,18 @@ export default function Gallery() {
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-6xl font-bold mb-6"
+            className="md:text-5xl text-2xl md:text-6xl font-bold mb-6"
           >
             Photo Gallery
           </motion.h1>
-          <p className="text-xl text-gray-300 leading-relaxed">
+          <p className="md:text-xl text-gray-300 leading-relaxed">
             A visual journey through the life and activities at Little Flower School.
           </p>
         </div>
       </section>
 
       {/* Gallery Section */}
-      <section className="py-24 bg-white">
+      <section className="md:py-24 py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           {/* Category Filter */}
           <div className="flex flex-wrap justify-center gap-4 mb-16">
@@ -75,7 +94,10 @@ export default function Gallery() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3 }}
                 className="relative h-80 rounded-[2rem] overflow-hidden group cursor-pointer shadow-md"
-                onClick={() => setSelectedImage(img.url)}
+                onClick={() => {
+  setSelectedImage(img.url);
+  setCurrentIndex(index);
+}}
               >
                 <img 
                   src={img.url} 
@@ -94,6 +116,23 @@ export default function Gallery() {
       </section>
 
       {/* Lightbox */}
+      {/* Prev Button */}
+<button 
+  onClick={handlePrev}
+  className="absolute left-5 md:left-10 text-white hover:text-accent"
+>
+  ◀
+</button>
+
+{/* Next Button */}
+<button 
+  onClick={handleNext}
+  className="absolute right-5 md:right-10 text-white hover:text-accent"
+>
+  ▶
+</button>
+
+
       {selectedImage && (
         <div 
           className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4 md:p-12"
@@ -102,6 +141,21 @@ export default function Gallery() {
           <button className="absolute top-8 right-8 text-white hover:text-accent transition-colors">
             <X size={40} />
           </button>
+         {/* Prev Button */}
+<button 
+  onClick={handlePrev}
+  className="absolute left-4 md:left-10 top-1/2 -translate-y-1/2 bg-black/50 p-3 rounded-full text-white hover:bg-black/80 transition"
+>
+  ◀
+</button>
+
+{/* Next Button */}
+<button 
+  onClick={handleNext}
+  className="absolute right-4 md:right-10 top-1/2 -translate-y-1/2 bg-black/50 p-3 rounded-full text-white hover:bg-black/80 transition"
+>
+  ▶
+</button>
           <img 
             src={selectedImage} 
             alt="Selected" 

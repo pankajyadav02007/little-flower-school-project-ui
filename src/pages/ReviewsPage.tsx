@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 
 export default function ReviewsPage() {
   return (
-    <div className="pt-12">
+    <div >
       {/* Page Header */}
       <section className="bg-primary py-24 text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
